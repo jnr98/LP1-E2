@@ -1,4 +1,8 @@
-<h2 align="center">Projeto Eagles - ViagensFX</h2>
+<h3 align="center">Projeto Eagles - ViagensFX</h3>
+
+###
+
+<p align="center">Sistema desktop desenvolvido em Java + JavaFX + MySQL para gerenciamento de registros relacionados a viagens, envolvendo prisioneiros, passaportes e rodovias. O sistema permite realizar operações completas de cadastro, edição, listagem e exclusão de dados, com interface gráfica intuitiva.</p>
 
 ###
 
@@ -7,4 +11,3 @@
 </div>
 
 ###
-
