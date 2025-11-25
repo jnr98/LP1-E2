@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.controller.MainController">
+
+    <center>
+        <TabPane>
+            <tabs>
+                <!-- ABA RODOVIA -->
+                <Tab text="Rodovia">
+                    <SplitPane dividerPositions="0.4">
+                        <!-- Formulário -->
+                        <VBox alignment="TOP_CENTER" spacing="10">
+                            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                            <Label text="Gerir Rodovia" style="-fx-font-size:18px;-fx-font-weight:bold;"/>
+
+                            <TextField fx:id="rodoviaNomeField"     promptText="Nome da Rodovia"/>
+                            <TextField fx:id="rodoviaCidadeField"   promptText="Cidade"/>
+                            <TextField fx:id="rodoviaExtensaoField" promptText="Extensão (km)"/>
+
+                            <HBox spacing="10" alignment="CENTER">
+                                <Button text="Salvar" onAction="#onSalvarRodovia" style="-fx-background-color:#4CAF50; -fx-text-fill:white;"/>
+                                <Button text="Excluir" onAction="#onExcluirRodovia" style="-fx-background-color:#F44336; -fx-text-fill:white;"/>
+                                <Button text="Limpar" onAction="#onLimparRodovia"/>
+                            </HBox>
+                        </VBox>
+                        <!-- Tabela -->
+                        <TableView fx:id="tabelaRodovia">
+                            <columns>
+                                <TableColumn fx:id="colRodoviaNome" text="Nome" prefWidth="150"/>
+                                <TableColumn fx:id="colRodoviaCidade" text="Cidade" prefWidth="150"/>
+                                <TableColumn fx:id="colRodoviaExtensao" text="Extensão" prefWidth="80"/>
+                            </columns>
+                        </TableView>
+                    </SplitPane>
+                </Tab>
+
+                <!-- ABA PRISIONEIRO (ATUALIZADA) -->
+                <Tab text="Prisioneiro">
+                    <SplitPane dividerPositions="0.4">
+                        <VBox alignment="TOP_CENTER" spacing="10">
+                            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                            <Label text="Gerir Prisioneiro" style="-fx-font-size:18px;-fx-font-weight:bold;"/>
+
+                            <TextField fx:id="prisoneiroLugarField" promptText="Lugar da Prisão"/>
+                            <TextField fx:id="prisoneiroNomeField"  promptText="Nome"/>
+                            <TextField fx:id="prisoneiroArmaField"  promptText="Arma"/>
+
+                            <HBox spacing="10" alignment="CENTER">
+                                <Button text="Salvar" onAction="#onSalvarPrisoneiro" style="-fx-background-color:#4CAF50; -fx-text-fill:white;"/>
+                                <Button text="Excluir" onAction="#onExcluirPrisoneiro" style="-fx-background-color:#F44336; -fx-text-fill:white;"/>
+                                <Button text="Limpar" onAction="#onLimparPrisoneiro"/>
+                            </HBox>
+                        </VBox>
+                        <TableView fx:id="tabelaPrisoneiro">
+                            <columns>
+                                <TableColumn fx:id="colPrisLugar" text="Lugar" prefWidth="120"/>
+                                <TableColumn fx:id="colPrisNome"  text="Nome"  prefWidth="120"/>
+                                <TableColumn fx:id="colPrisArma"  text="Arma"  prefWidth="100"/>
+                            </columns>
+                        </TableView>
+                    </SplitPane>
+                </Tab>
+
+                <!-- ABA PASSAPORTE (ATUALIZADA) -->
+                <Tab text="Passaporte">
+                    <SplitPane dividerPositions="0.4">
+                        <VBox alignment="TOP_CENTER" spacing="10">
+                            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                            <Label text="Gerir Passaporte" style="-fx-font-size:18px;-fx-font-weight:bold;"/>
+
+                            <TextField fx:id="passaporteNomeField"   promptText="Nome"/>
+                            <TextField fx:id="passaporteNumeroField" promptText="Número do Passaporte"/>
+                            <TextField fx:id="passaportePaisField"   promptText="País"/>
+
+                            <HBox spacing="10" alignment="CENTER">
+                                <Button text="Salvar" onAction="#onSalvarPassaporte" style="-fx-background-color:#4CAF50; -fx-text-fill:white;"/>
+                                <Button text="Excluir" onAction="#onExcluirPassaporte" style="-fx-background-color:#F44336; -fx-text-fill:white;"/>
+                                <Button text="Limpar" onAction="#onLimparPassaporte"/>
+                            </HBox>
+                        </VBox>
+                        <TableView fx:id="tabelaPassaporte">
+                            <columns>
+                                <TableColumn fx:id="colPassNome" text="Nome" prefWidth="120"/>
+                                <TableColumn fx:id="colPassNumero" text="Número" prefWidth="100"/>
+                                <TableColumn fx:id="colPassPais" text="País" prefWidth="120"/>
+                            </columns>
+                        </TableView>
+                    </SplitPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+
+    <bottom>
+        <HBox spacing="12" alignment="CENTER" style="-fx-padding:10; -fx-background-color:#111;">
+            <Label text="Sistema CRUD - JavaFX + MySQL" style="-fx-text-fill:white;"/>
+            <Hyperlink text="YouTube" onAction="#onOpenLink" style="-fx-text-fill:#4FC3F7;"/>
+        </HBox>
+    </bottom>
+</BorderPane>
