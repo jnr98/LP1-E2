@@ -1,7 +1,6 @@
 ## 📌 Projeto Eagles - ViagensFX
 Sistema desktop desenvolvido em Java + JavaFX + MySQL para gerenciamento de registros relacionados a viagens, envolvendo prisioneiros, passaportes e rodovias. O sistema permite realizar operações completas de cadastro, edição, listagem e exclusão de dados, com interface gráfica intuitiva.</p>
 
----
 
 ## 🛠 Tecnologias Utilizadas:
 <div align="left">
@@ -14,7 +13,6 @@ Sistema desktop desenvolvido em Java + JavaFX + MySQL para gerenciamento de regi
 
 ###
 
----
 
 ## 📂 Estrutura do Projeto
 
@@ -38,8 +36,6 @@ Eagles
 │       └── MainView.fxml
 ```
 
----
-
 ## 🧱 Arquitetura e Estrutura do Projeto
 
 O projeto segue uma organização em camadas:
@@ -51,10 +47,6 @@ O projeto segue uma organização em camadas:
 - **util** → utilitários, como a `ConnectionFactory`  
 
 
----
 ## Script de criação do Banco
-<p align="center">
-  <img src="assets/img/dba.png" width="700">
-</p>
+<img src="assest/img/dba.png" width="700">
 
----
