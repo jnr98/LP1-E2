@@ -53,6 +53,8 @@ O projeto segue uma organização em camadas:
 
 ---
 ## Script de criação do Banco
-![alt text](image.png)
+<p align="center">
+  <img src="assets/img/dba.png" width="700">
+</p>
 
 ---
